@@ -55,5 +55,36 @@ public class Graph {
 
   public int[] shortestPath(Node s) {
     // implement this
+    //have grpah of nodes 
+    //given starting node
+    ArrayList<Node> explored = new ArrayList<Node>();
+    int distStart = 0;
+    explored.add(s);
+    while (explored.size() != nodes.size()){
+      for (Node n : explored){        
+        
+        for (Link l : n.adjlist) {
+          //PRINT list of 'found nodes' - > 'node' : 'PATH TO start node'
+          int path = dist
+          System.out.print(n.name "->" l.n2.name ": " + distances[i]);
+          //add the weight to the distance to staring node
+          
+          
+        }
+      }
+    }
+    
+
+    //PRINT list of 'found nodes' - > 'node' : 'PATH TO start node'
+    //PRINT found a node "" : distance is ""
+    //Prints node from the list with shortest path to start
+
+    //return array of ints 
+    //each index is the distance to that node 
+    //[0,1,2,3,2,4]
+
   } // shortestPath()
+
+
+
 }
