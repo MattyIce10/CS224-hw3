@@ -61,8 +61,7 @@ public class Graph {
     int distStart = 0;
     explored.add(s);
     while (explored.size() != nodes.size()){
-      for (Node n : explored){        
-        
+      for (Node n : explored){                
         for (Link l : n.adjlist) {
           //PRINT list of 'found nodes' - > 'node' : 'PATH TO start node'
           int path = dist
@@ -70,10 +69,29 @@ public class Graph {
           //add the weight to the distance to staring node
           
           
+          
         }
       }
     }
     
+// Set Discovered[s] = true and Discovered[v] = false for all other v
+// Initialize L[0] to consist of the single element s
+// Set the layer counter i = 0
+// Set the current BFS tree T = ∅
+// While L[i] is not emptyrrrrr
+// Initialize an empty list L[i + 1]
+// For each node u ∈ L[i]
+// Consider each edge (u, v) incident to u
+// If Discovered[v] = false then
+// Set Discovered[v] = true
+// Add edge (u, v) to the tree T
+// Add v to the list L[i + 1]
+// Endif
+// Endfor
+// Increment the layer counter i by one
+// Endwhile
+
+
 
     //PRINT list of 'found nodes' - > 'node' : 'PATH TO start node'
     //PRINT found a node "" : distance is ""
